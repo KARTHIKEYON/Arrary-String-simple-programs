@@ -36,4 +36,19 @@ class Solution{
         }
     }
 
+You are given an integer N, reverse the digits of given number N, ensuring that the reversed number has no leading zeroes. Return the resulting reversed number.
+
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        long rev=0;
+        for(long i=n;i>0;i=i/10){
+            long rem=i%10;
+            rev=rev*10+rem;
+        }
+        return rev;
+    }
+}
+
 
