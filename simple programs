@@ -51,4 +51,48 @@ class Solution
     }
 }
 
+5.Given a number and its reverse. Find that number raised to the power of its own reverse.
+Note: As answers can be very large, print the result modulo 109 + 7.
+
+class Solution
+{
+        
+    long power(int N,int R)
+    {
+        long div=1000000007;
+        if(R==0){
+            return 1;
+        }
+        if(R%2==0){
+            
+            long value =power(N,R/2);
+            return (value*value)%div;
+        }
+        else{
+            
+            long value=power(N,R-1);
+            return(value*N)%div;
+        }
+        
+    }
+
+}
+
+
+6.Given two positive integers a and b, find GCD of a and b.
+
+Note: Don't use the inbuilt gcd function
+
+class Solution {
+    public static int gcd(int a, int b) {
+        while(a>0){
+            int rem=b%a;
+            b=a;
+            a=rem;
+        }
+        return b;
+    }
+}
+        
+
 
