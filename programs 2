@@ -27,4 +27,27 @@ Input: n = 153
 Output: true
 Explanation: 153 is an Armstrong number since 13 + 53 + 33 = 153. Hence answer is "true".
 ------------------------------------------------------------------------------------------------------------
-9.
+9.Given an integer, check whether it is a palindrome or not.
+
+class Solution
+{
+    public String is_palindrome(int n)
+    {
+     int sum=0;
+     int n1=n;
+     while(n1!=0)
+     {
+         sum=sum*10+n1%10;
+         n1=n/10;
+     }
+     if(sum==n)
+         return "Yes";
+     else
+         return "No";
+     
+    }
+}
+
+output :
+Input: n = 555
+Output: Yes
