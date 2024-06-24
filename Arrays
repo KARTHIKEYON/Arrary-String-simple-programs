@@ -53,13 +53,25 @@ output:
 Input: n = 4, arr[] = {1,2,3,4}, x = 3
 Output: 2
 ----------------------------------------------------------------------------------------------------------------
+4.Given an array of size n-1 such that it only contains distinct integers in the range of 1 to n. Return the missing element.
 
+class Solution {
+
+    // Note that the size of the array is n-1
+    int missingNumber(int n, int arr[]) {
+        int sum=n*(n+1)/2;
+        for(int i:arr)sum-=i;
+        return sum;
+
+        // Your Code Here
+    }
 }
 
 output:
-Input:
-N = 5
-A[] = {2,4,1,3,5}
-Output: 3
+Input: n = 5, arr[] = {1,2,3,5}
+Output: 4
+
+
+
 
 
