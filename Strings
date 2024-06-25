@@ -21,3 +21,29 @@ Output:
 Explanation:
 Since string contains only 0 and 1, output is 1.
 ---------------------------------------------------------------------------------------------------------------------
+2.Given a list of names, display the longest name. 
+If there are multiple names of the longest size then return the first occurring name .
+
+class Solution {
+    public static String longest(int n, String[] names) {
+        int max=0;
+        int a=0;
+        for(int i=0;i<n;i++){
+            String s =names[i];
+            if(max<s.length()){
+                max=s.length();
+                a=i;
+            }
+        }
+        return names[a];
+    }
+}
+
+
+output:
+Input:
+n = 5
+names[] = { "Geek", "Geeks", "Geeksfor", "GeeksforGeek", "GeeksforGeeks" }
+Output: GeeksforGeeks
+Explanation: name "GeeksforGeeks" has maximum length among all names. 
+-----------------------------------------------------------------------------------------------------------------
