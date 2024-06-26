@@ -47,3 +47,19 @@ names[] = { "Geek", "Geeks", "Geeksfor", "GeeksforGeek", "GeeksforGeeks" }
 Output: GeeksforGeeks
 Explanation: name "GeeksforGeeks" has maximum length among all names. 
 -----------------------------------------------------------------------------------------------------------------
+3.Given a string s , return reverse of the string as output.
+
+
+class Solution {
+    static String revStr(String s) {
+        
+        StringBuilder str=new StringBuilder(s);
+        return str.reverse().toString();
+    }
+}
+
+output:
+s = "GeeksforGeeks"
+Output: "skeeGrofskeeG" 
+Explanation: Reverse string of "GeeksforGeeks" will be "skeeGrofskeeG"
+----------------------------------------------------------------------------------------------------------------
