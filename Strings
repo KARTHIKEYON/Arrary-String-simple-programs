@@ -63,3 +63,17 @@ s = "GeeksforGeeks"
 Output: "skeeGrofskeeG" 
 Explanation: Reverse string of "GeeksforGeeks" will be "skeeGrofskeeG"
 ----------------------------------------------------------------------------------------------------------------
+4.Given a string, remove the vowels from the string.
+
+class Solution {
+    String removeVowels(String S) {
+        return S.replaceAll("[aeiouAEIOU]","");
+    }
+}
+
+output:
+Input: S = "welcome to geeksforgeeks"
+Output: wlcm t gksfrgks
+Explanation: Ignore vowels and print other
+characters 
+---------------------------------------------------------------------------------------------------------------
