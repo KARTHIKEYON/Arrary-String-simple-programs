@@ -1,0 +1,39 @@
+1.You are given a string s. You need to reverse the string.
+
+class Reverse
+{
+    // Complete the function
+    // str: input string
+    public static String reverseWord(String str)
+    {
+     StringBuilder s = new StringBuilder(str);
+     return s.reverse().toString();
+    }
+}
+
+output:
+Input:
+s = Geeks
+Output: skeeG
+------------------------------------------------------------------
+2.Your task is to implement the function strstr. The function takes two strings as arguments (s,x) and locates the occurrence of the string x in the string s. 
+The function returns an integer denoting the first occurrence of the string x in s (0 based indexing).
+Note: You are not allowed to use inbuilt function.
+
+class GfG
+{
+    //Function to locate the occurrence of the string x in the string s.
+    int strstr(String s, String x)
+    {
+       int sol= s.indexOf(x);
+       return sol;
+}
+}
+
+output:
+Input:
+s = GeeksForGeeks, x = Fr
+Output: -1
+Explanation: Fr is not present in the
+string GeeksForGeeks as substring.
+--------------------------------------------------------------------------------
