@@ -1,0 +1,37 @@
+import java.util.*;
+public class Anagram{
+    static boolean check(String str1,String str2){
+        if(str1.length() != str2.length()){
+            return false;
+        }
+        char[] array1=str1.toCharArray();
+        char[] array2=str2.toCharArray();
+        
+        Arrays.sort(array1);
+        Arrays.sort(array2);
+        
+        return rrays.equals(array1,array2);
+        
+    }
+    public static void main(String[] arg){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first string:");
+        String str1=sc.nextLine();
+        System.out.println("Enter the second string:");
+        String str2=sc.nextLine();
+        if(check(str1,str2)){
+            System.out.println("anagrams");
+        }
+        else{
+            System.out.println("not anagram");
+        }
+        
+    }
+}
+
+output:
+Enter the first string:
+karthi
+Enter the second string:
+arthi
+not anagram
