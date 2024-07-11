@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] arg){
+        int a[][]={{1,2,3},
+                   {5,6,7},
+                   {9,10,11}};
+        int left=0,right=a[0].length-1;
+        int top=0,bottom=a.length-1;
+        List<Integer> ab= new ArrayList<>();
+        while(left<=bottom && top<=bottom){
+            for(int i=left;i<=right;i++){
+                ab.add(a[top][i]);
+        }
+        top++;
+            for(int i=top;i<=bottom;i++){
+                ab.add(a[i][right]);
+            }
+        right--;
+        if(top<=bottom){
+            for(int i=right;i>=left;i--){
+                ab.add(a[bottom][i]);
+            }
+        bottom--;
+        }
+        if(left<=right){
+            for(int i=bottom;i>=top;i--){
+                ab.add(a[i][left]);
+            }
+        }
+        left++;
+    }
+    System.out.println(ab);
+}
+}
+
+output:
+[1, 2, 3, 7, 11, 10, 9, 5, 6]
