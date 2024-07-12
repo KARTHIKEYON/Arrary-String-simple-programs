@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        int count=1;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int a = sc.nextInt();
+        for(int i=1;i<=a;i++){
+            count=count*i;
+        }
+        System.out.println("fac of number is:"+count);
+}
+}
+
+output:
+Enter the number: 5
+fac of number is:120
