@@ -143,6 +143,35 @@ N = 6, X = 16
 Arr[] = {1, 4, 45, 6, 10, 8}
 Output: Yes
 Explanation: Arr[3] + Arr[4] = 6 + 10 = 16
+----------------------------------------------------------------------------------------------
+8.array sorting and finding the largest value in the array
+
+import java.util.*;
+public class Main{
+    public static void main(String[] arg){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+        Arrays.sort(a);
+        System.out.println(a[n-1]);
+    }
+}
+
+output:
+4
+12
+11
+3
+5
+12 11 3 5 
+12
 
 
 
