@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] arg){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the rows:");
+        int r=sc.nextInt();
+        System.out.println("Enter the colums:");
+        int c=sc.nextInt();
+        int[][] a= new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println();
+        }
+        }
+}
+
+/*
+output:
+Enter the rows:
+3
+Enter the colums:
+3
+12
+23
+34
+45
+67
+78
+89
+90
+01
+12 23 34 
+45 67 78 
+89 90 1 
+*/
