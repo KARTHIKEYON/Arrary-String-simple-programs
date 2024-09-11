@@ -29,22 +29,21 @@ Explanation: 153 is an Armstrong number since 13 + 53 + 33 = 153. Hence answer i
 ------------------------------------------------------------------------------------------------------------
 9.Given an integer, check whether it is a palindrome or not.
 
-class Solution
-{
-    public String is_palindrome(int n)
-    {
-     int sum=0;
-     int n1=n;
-     while(n1!=0)
-     {
-         sum=sum*10+n1%10;
-         n1=n/10;
-     }
-     if(sum==n)
-         return "Yes";
-     else
-         return "No";
-     
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        String str="karthi";
+        String revstr="";
+        int str1=str.length()-1;
+        for(int i=str1;i>=0;i--){
+            revstr=revstr+str.charAt(i);
+        }
+        if(revstr.toLowerCase().equals(str.toLowerCase())){
+            System.out.println("palindome");
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
     }
 }
 
